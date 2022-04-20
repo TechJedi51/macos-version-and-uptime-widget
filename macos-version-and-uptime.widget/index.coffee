@@ -69,7 +69,7 @@ if theme == 'dark'
 
 # --- Collect the data -------------------------------------------------
 #noinspection JSUnusedGlobalSymbols
-command: "os-version-uptime.widget/data.sh"
+command: "macos-version-and-uptime.widget/data.sh"
 
 # --- Set the refresh frequency ----------------------------------------
 refreshFrequency: '1m'
@@ -98,7 +98,7 @@ update: (output,domEl) ->
 
   # --- Create the OS information --------------------------------------
   [osName, osVersion, osBuild] = OS_Version.split(" ")
-  iconDir = 'os-version-uptime.widget/icons/'
+  iconDir = 'macos-version-and-uptime.widget/icons/'
 
   icon = ''; osRelease = ''
   macOSVersion = parseInt( osVersion, 10 )
